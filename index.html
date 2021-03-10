@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Patient Report Check</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
+<script type="f71672df0975e001580fd226-text/javascript">
+
+
+</script>
+<body>
+
+<div class="w3-top">
+<div class="w3-bar w3-white w3-card">
+<img alt="Logo" style="width:50px;" src="covid19.png">
+<img alt="Logo" style="width:50px;" src="dalogo.png">
+<img alt="Logo" style="width:50px;" src="gmdalogo.png">
+<img class="w3-right" style="height: 36px;padding: 3px;" src="data:image/png;base64,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" />
+<a class="w3-bar-item w3-button w3-right" href="https://gmdahrheal.github.io/checkreport/">Logout ( 8194045182 )</a>
+</div>
+</div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:62px">
+<style>.kt-portlet__head-toolbar,.kt-portlet__head-title{display:none;}</style>
+<script type="f71672df0975e001580fd226-text/javascript">
+	function show_hide(id){
+		var sh_id=document.getElementById(id);
+		if(sh_id.style.display=='')sh_id.style.display='none'; else sh_id.style.display='';
+	}</script> <script type="f71672df0975e001580fd226-text/javascript">
+	var lastEditID=0,lastEditTBL='';
+	function updateFormicmrsrf(ids,tbl,data){
+		lastEditID=ids;lastEditTBL=tbl;
+		callPageLevelAllVisible();
+		document.getElementById('form_idsicmrsrf').value=ids;
+		var frm=document.frm_icmrsrf.elements
+		document.getElementById('addeditformicmrsrf').style.display='';
+		jQuery('#searchformicmrsrf').hide();
+		for(var i=0;i < frm.length;i++){
+			if(frm[i].type=='select-multiple'){
+				var nm=frm[i].name;nm=nm.replace('[]','');
+				if(data){
+					eval('var selected=['+data[nm+'_']+']');
+				}else{
+					eval('var selected=['+jQuery('#'+ids+'_'+nm).html()+']');
+				}
+				//var obj=jQuery('#'+tbl+'_'+nm);
+				var obj=jQuery('#form_inp_'+nm);
+				for (var i2 in selected) {
+					var val=selected[i2];
+				   try{obj.find('option[value='+val+']').attr('selected',1);}catch(e){if(console)console.log(e);}
+				}
+				jQuery(frm[i]).select2();;
+			}
+			else if(frm[i].type=='date' || frm[i].type=='datetime-local' || frm[i].type=='time' || frm[i].type=='number' || frm[i].type=='text' || frm[i].type=='email' || frm[i].type=='textarea' || frm[i].type=='select-one'){
+				try{
+					var ele=document.getElementById(ids+'_'+frm[i].name);
+					if(ele!=null && jQuery(frm[i]).hasClass('ft_email'))jQuery(ele).find('script').remove();
+					if(ele!=null){
+						frm[i].value=ele.innerHTML;
+						frm[i].focus();if(frm[i].type=='select-one')if(frm[i].name=='city')$(frm[i]).change();
+						if(frm[i].type=='select-one'){jQuery(frm[i]).select2();}
+						
+					}else if(typeof data[frm[i].name]!='undefined'){
+						if(frm[i].type=='datetime-local'){
+							frm[i].value=(data[frm[i].name+'_']?data[frm[i].name+'_']:data[frm[i].name]).replace(" ", "T");
+						}else{
+						frm[i].value=(data[frm[i].name+'_']?data[frm[i].name+'_']:data[frm[i].name]);
+						frm[i].focus();if(frm[i].type=='select-one')if(frm[i].name=='city')$(frm[i]).change();
+						if(frm[i].type=='select-one'){jQuery(frm[i]).select2();}
+						}
+					}
+				}catch(err){console.log(err);}
+			}
+			else if(frm[i].type=='select'){
+				try{
+					var ele=document.getElementById(ids+'_'+frm[i].name);
+					if(ele!=null){
+						var dt_ele=(ele.innerHTML).split('-');alert(dt_ele[0]);
+						if(dt_ele.length==3){
+							jQuery('select[name="'+frm[i].name+'[yy]"]').val(dt_ele[0])//.select2();
+							jQuery('select[name="'+frm[i].name+'[mm]"]').val(dt_ele[1])//.select2();
+							jQuery('select[name="'+frm[i].name+'[dd]"]').val(dt_ele[2])//.select2();
+						}
+					}
+				}catch(err){  }
+			}
+		}
+		callPageLevelFun();
+	}
+	var icmrsrf_data=[];
+</script>
+<style>.custom-combobox{
+    padding: 0;
+    border: 0px;
+}
+.err{color: red;
+    font-weight: bold;
+text-align: center;}
+input[type=file] {
+    width: 100%;
+}</style>
+<div class="kt-portlet__head kt-portlet__head--lg">
+<div class="kt-portlet__head-label">
+<span class="kt-portlet__head-icon">
+<i class="kt-font-brand flaticon2-line-chart"></i>
+</span>
+<h3 class="kt-portlet__head-title">
+Table Data
+</h3>
+</div>
+<div class="kt-portlet__head-toolbar">
+<div class="kt-portlet__head-wrapper">
+<div class="kt-portlet__head-actions">
+</div>
+</div>
+</div>
+</div>
+<div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+
+<style>
+	.tbl_td_dta{ max-width:200px; word-wrap:break-word;overflow: auto; max-height: 140px;}
+	.tac{text-align:center;}
+	</style>
+<div class="table-responsive">
+<table id="icmrsrf_table" class="table table-striped- table-bordered table-hover table-checkable" cellspacing="0" width="100%">
+<thead>
+<tr><th>Sl.No</th><th class="edit_th">&nbsp;</th><th class="del_th">&nbsp;</th>
+<th class="a1_1">Patient Name</th> <th class="a1_8">Mobile Number</th> <th class="a1_5">Age Years</th> <th class="e_12">Laboratory Name</th> <th class="b5_5">Date of Sample Collection</th> <th class="z1_4">Final Result Sample</th> </tr></thead><tbody> <tr id="tr_1778733" title="1778733" data-ids="1778733">
+<td class="data_id " title="1778733">1</td>
+<td class="edit_td"><span id="1778733_edit"></span></td>
+<td class="del_td"><span id="1778733_del"></span></td>
+<td class="a1_1" style=""><div class="tbl_td_dta" id="1778733_a1_1">PRIYANKA BHATT</div>
+</td> <td class="a1_8" style=""><div class="tbl_td_dta" id="1778733_a1_8">8194045182</div>
+</td> <td class="a1_5" style=""><div class="tbl_td_dta" id="1778733_a1_5">21</div>
+</td> <td class="e_12" style=""><div class="tbl_td_dta" id="1778733_e_12">Civil Hospital Gurugram</div>
+</td> <td class="b5_5" style=""><div class="tbl_td_dta" id="1778733_b5_5">2021-01-11 21:00:05</div>
+</td> <td class="z1_4" style=""><span style="display:none;" id="1778733_z1_4">2</span>Positive</td> </tr> </tbody></table></div></div>
+<script type="f71672df0975e001580fd226-text/javascript">
+	//var icmrsrf_data=[];
+	var icmrsrf_tbl;
+	jQuery(function() {
+		icmrsrf_tbl=jQuery('#icmrsrf_table').DataTable({
+			"pageLength": 10,
+			"lengthMenu": [[10, 25, 50,100,500, -1], [10, 25, 50,100,500, "All"]],
+			"scrollX": true
+			,dom: "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" +
+				"<'row'<'col-sm-12 col-md-6'i><'col-sm-12 col-md-6'p>>" +
+				"<'row'<'col-sm-12'tr>>" +
+				"<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" +
+				"<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>"
+					});
+	});
+	$('#icmrsrf_table tbody').on( 'click', 'button', function () {
+		if($(this).hasClass('edit')){
+			var data = icmrsrf_tbl.row( $(this).parents('tr') ).data();
+			updateFormicmrsrf(data['ids'],'icmrsrf',data);
+		}
+		if($(this).hasClass('delete')){
+			var data = icmrsrf_tbl.row( $(this).parents('tr') ).data(); 
+			bootbox.confirm({
+				message: "Do you want to delete this record ?",
+				buttons: {
+					confirm: {
+						label: 'Yes',
+						className: 'btn-success'
+					},
+					cancel: {
+						label: 'No',
+						className: 'btn-danger'
+					}
+				},
+				callback: function (result) {
+					if(result){
+						$('#icmrsrfids').val(data['ids']);
+						$('#icmrsrfForm').submit();
+					}
+				}
+			});
+		}
+		if($(this).hasClass('customAction')){
+			var data = icmrsrf_tbl.row( $(this).parents('tr') ).data(); 
+			customAction(data);
+		}
+	} );
+
+	</script>
+<form method="post" id="icmrsrfForm">
+<input type="hidden" name="ids" id="icmrsrfids" />
+<input name="delete" type="hidden" />
+</form>
+<script type="f71672df0975e001580fd226-text/javascript">
+	if(document.getElementsByTagName('tbody')[0].getElementsByTagName('tr').length==0){
+		document.getElementById('icmrsrf_table').innerHTML='	<h3 class="w3-center">Kindly recheck the entered contact number. Either the number is wrongly mentioned or your report is under process. Request you to check after sometime.</h3>';
+	}
+	</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="f71672df0975e001580fd226-|49" defer=""></script></body>
+</html>
